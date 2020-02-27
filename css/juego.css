@@ -1,0 +1,128 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  width:40%;/*mio*/
+  background: #FFF;
+  padding: 30px;
+  color: #000;
+}
+
+.col-60 {
+  width:60%; /*mio*/
+  background: #E84A5F;
+
+}
+
+.piezaTablero{ /*mio*/
+
+  width:200px; 
+  height: 200px;
+  float: left;
+  /*border-width: 0.5px;*/
+  /*border-style: solid;*/
+  /*border-color: #E84A5F;*/
+}
+
+.piezaTablero img{/*mio*/
+  width: 199px;
+  height: 199px;
+  border-style: solid;
+  border-color: #E84A5F;
+  border-width: 1px;
+}
+
+#objetivo{ /*mio*/
+  width: 85%;
+  height: 85%;
+}
+
+#objetivo img{
+  width: 100%;
+  height: 100%;
+}
+
+#flecha{
+  font-size: 60px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#juego div {
+
+  text-align: center;
+  animation: fadein 2s;
+
+}
+
+#juego{
+  width: 600px; /*mio*/
+  height: 600px; /*mio*/
+  background-color: #E84A5F;
+  font-size:40px;
+
+}
+#cartel{
+  background-color: #E84A5F;
+  height: 500px;
+  border-radius: 20px;
+  margin:auto;
+  opacity: 0.9;
+  width: 400px;
+  position: relative;
+  border-style: solid;
+  top:47px;
+}
+#cartel-ganador{
+  position: absolute;
+  top:0px;
+  left:30px;
+  width:350px;
+  /*z-index:1;*/
+
+}
+p{
+  position: absolute;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 0.9em;
+  width:100%;
+  margin-top: 360px;
+
+
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
